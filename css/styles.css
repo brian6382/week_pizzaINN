@@ -1,0 +1,180 @@
+
+#header{
+  background-image: url("../img/pexels-rodolfo-clix-1596888.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  height: 200%;
+}
+#toppingsx img, #toppings2 img{
+ object-fit: contain;
+ max-width: 100%;
+}
+/* Check-out styles */
+#checkout{
+  background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.75)),
+  url("../img/pexels-rodolfo-clix-1596888.jpg");
+  background-repeat: no-repeat;
+background-size: cover;
+filter: alpha(opacity=80);
+}
+#btnn{
+  padding-right: 20px;
+}
+#checkout img{
+  opacity: 0.1;
+}
+span.price {
+  float: right;
+  color: grey;
+}
+#cart{
+  text-decoration: underline ;
+  padding-left: 50%;
+}
+
+.row img{
+  padding-top: 20px;
+  padding-bottom: 10px;
+    }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.delivery{
+  display: block;
+  text-align: center;
+}
+.topp{
+  padding-bottom: 70px;
+}
+.topp h2{
+  display: flex;
+  justify-content: center;
+  color: #fac564;
+  text-transform: uppercase;
+}
+.topp p{
+color: #fff;
+font-size: 18px;
+}
+h6{
+  color: #fff;
+}
+.jumbotron{
+    background-color: transparent;
+    
+}
+.jumbotron h2{
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.jumbotron{
+  color: #fff;
+  text-shadow: #000;
+}
+.pizza{
+  padding-bottom: 70px;
+}
+
+.pizza h2{
+  display: flex;
+  justify-content: center;
+  color: #fac564;
+  text-transform: uppercase;
+}
+.pizza p{
+  color: #fac564;;
+}
+.pizza label{
+color: #fff;
+}
+.crusts{
+  padding-bottom: 70px;
+}
+.crusts h2{
+  display: flex;
+  justify-content: center;
+  color: #fac564;
+  text-transform: uppercase;
+}
+.deli h3{
+  display: flex;
+  justify-content: center;
+  color: #fac564;
+  text-transform: uppercase;
+}
+.orde h2{
+  color: #fac564;
+  text-transform: uppercase;
+}
+.orde p a{
+  color: #fff;
+}
+
+
+ /*** buttons ***/
+
+
+  
+  .btn:hover {
+    background-color: #45a049;
+    color: tomato;
+    transition: ease;
+  }
+
+  #cancel {
+    float:center;
+     margin-right: 0%; 
+     background-color: red;
+
+  }
+  .continue {
+    float:center;
+     margin-right: 3%; 
+     background-color: greenyellow;
+  }
+  /* ********************** */
+  
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    .btn{
+        font-size:70% ;
+  }}
+
+  /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #ffb727;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #ffc550;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
