@@ -1,6 +1,6 @@
 # Pizza-Inn
 #### A pizza ordering website
-#### By **BetBrian Kulei**
+#### Created By **Brian Kulei**
 ## Description
 This is the source code for a website that allows the user to order pizza . The project is independent of any other code bases. It is currently deployed on Github pages and can be accessed [here](https://bethwelkip.github.io/Pizza-Inn/).
 ## Setup/Installation Requirements
