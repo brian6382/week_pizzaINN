@@ -1,31 +1,31 @@
 function small() {
     myPizza.size = "Small";
-    myPizza.sizeCharge = 500;
-    myPizza.crustCharge = 150;
+    myPizza.sizeCharge = 650;
     myPizza.toppingCharge = 100;
+    myPizza.crustCharge = 150;
 };
 
 function medium() {
     myPizza.size = "Medium";
-    myPizza.sizeCharge = 700;
-    myPizza.crustCharge = 200;
+    myPizza.sizeCharge = 800;
+    myPizza.crustCharge = 250;
     myPizza.toppingCharge = 200;
 
 };
 
 function large() {
     myPizza.size = "Large";
-    myPizza.sizeCharge = 900;
-    myPizza.crustCharge = 250;
-    myPizza.toppingCharge = 300;
+    myPizza.sizeCharge = 1000;
+    myPizza.crustCharge = 300;
+    myPizza.toppingCharge = 250;
 
 };
 
 function delivery() {
 
-    myPizza.delivery = 150;
+    myPizza.delivery = 200;
     prompt("Where would you like to have your pizza delivered. Enter Estate Name");
-    alert("Your delivery fees would be ksh 150!")
+    alert("Your delivery fees would be ksh 200!")
 
 };
 function checkedToppings() {
@@ -36,24 +36,24 @@ function checkedToppings() {
     if (document.getElementById("toppings4").checked) { checked++; }
     if (document.getElementById("toppings5").checked) { checked++; }
     if (document.getElementById("toppings6").checked) { checked++; }
-    myPizza.toppingCharge *= checked;
-    console.log(myPizza.toppingCharge);
+    let total = myPizza.toppingCharge *= checked;
+    console.log(total);
 }
 
 function crust() {
     console.log(myPizza.size);
     if (myPizza.size === "Large") {
+        document.getElementById("thin-crust").innerHTML = "ksh " + 300;
+        document.getElementById("hard-crust").innerHTML = "ksh " + 300;
+        document.getElementById("thick-crust").innerHTML = "ksh " + 300;
+        document.getElementById("italian-crust").innerHTML = "ksh " + 300;
+
+    }
+    else if (myPizza.size === "Medium") {
         document.getElementById("thin-crust").innerHTML = "ksh " + 250;
         document.getElementById("hard-crust").innerHTML = "ksh " + 250;
         document.getElementById("thick-crust").innerHTML = "ksh " + 250;
         document.getElementById("italian-crust").innerHTML = "ksh " + 250;
-
-    }
-    else if (myPizza.size === "Medium") {
-        document.getElementById("thin-crust").innerHTML = "ksh " + 200;
-        document.getElementById("hard-crust").innerHTML = "ksh " + 200;
-        document.getElementById("thick-crust").innerHTML = "ksh " + 200;
-        document.getElementById("italian-crust").innerHTML = "ksh " + 200;
     }
     else {
         document.getElementById("thin-crust").innerHTML = "ksh " + 150;
@@ -66,12 +66,12 @@ function crust() {
 }
 function toppings() {
     if (myPizza.size === "Large") {
-        document.getElementById("fruit-topping").innerHTML = "Ksh 450";
-        document.getElementById("kale-topping").innerHTML = "Ksh 450";
-        document.getElementById("pepperoni-topping").innerHTML = "Ksh 450";
-        document.getElementById("spinach-topping").innerHTML = "Ksh 450";
-        document.getElementById("tomato-topping").innerHTML = "Ksh 450";
-        document.getElementById("cheese-topping").innerHTML = "Ksh 450";
+        document.getElementById("fruit-topping").innerHTML = "Ksh 250";
+        document.getElementById("kale-topping").innerHTML = "Ksh 250";
+        document.getElementById("pepperoni-topping").innerHTML = "Ksh 250";
+        document.getElementById("spinach-topping").innerHTML = "Ksh 250";
+        document.getElementById("tomato-topping").innerHTML = "Ksh 250";
+        document.getElementById("cheese-topping").innerHTML = "Ksh 250";
 
     }
     else if (myPizza.size === "Medium") {
@@ -83,7 +83,7 @@ function toppings() {
         document.getElementById("cheese-topping").innerHTML = "ksh 200";
 
     }
-    else {
+    else if (myPizza.size === "Small") {
         document.getElementById("fruit-topping").innerHTML = "ksh 100";
         document.getElementById("kale-topping").innerHTML = "ksh 100";
         document.getElementById("pepperoni-topping").innerHTML = "ksh 100";
@@ -93,13 +93,16 @@ function toppings() {
 
 
     }
+    else{
+        alert("pick one toppings");
+    }
 
 }
 
 function Pizza() {
-    this.size = "";
-    this.topping = "";
-    this.crust = "";
+    this.size = "size";
+    this.topping = "topping";
+    this.crust = "crust";
     this.delivery = 0;
     this.sizeCharge = 0;
     this.toppingCharge = 0;
