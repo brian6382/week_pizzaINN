@@ -4,7 +4,7 @@
 ## Description
 This is the source code for a website that allows the user to order pizza . The project is independent of any other code bases. It is currently deployed on Github pages and can be accessed [here](https://brian6382.github.io/week_pizzaINN/).
 
-![Screenshot from 2021-06-26 12-26-40](https://user-images.githubusercontent.com/82508349/123508739-d94cad80-d679-11eb-8fe7-2978b477a552.png)
+![Screenshot from 2021-06-26 12-26-40](https://user-images.githubusercontent.com/82508349/123508739-d94cad80-d679-11eb-8fe7-2978b477a552.png)![Screenshot from 2021-06-26 12-26-40](https://user-images.githubusercontent.com/82508349/123508739-d94cad80-d679-11eb-8fe7-2978b477a552.png)
 ## Setup/Installation Requirements
 This codebase is standalone and does not require any other code.To run this webpage, you will only need a browser and active internet
 * Open the browser and type https://brian6382.github.io/week_pizzaINN/
