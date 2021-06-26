@@ -55,12 +55,14 @@ function crust() {
         document.getElementById("thick-crust").innerHTML = "ksh " + 250;
         document.getElementById("italian-crust").innerHTML = "ksh " + 250;
     }
-    else {
+    else if (myPizza.size === "Small") {
         document.getElementById("thin-crust").innerHTML = "ksh " + 150;
         document.getElementById("hard-crust").innerHTML = "ksh " + 150;
         document.getElementById("thick-crust").innerHTML = "ksh " + 150;
         document.getElementById("italian-crust").innerHTML = "ksh " + 150;
 
+    } else{
+        alert("order crust");
     }
 
 }
@@ -100,9 +102,9 @@ function toppings() {
 }
 
 function Pizza() {
-    this.size = "size";
-    this.topping = "topping";
-    this.crust = "crust";
+    this.size = "";
+    this.topping = "";
+    this.crust = "";
     this.delivery = 0;
     this.sizeCharge = 0;
     this.toppingCharge = 0;
